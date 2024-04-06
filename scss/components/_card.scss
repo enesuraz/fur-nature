@@ -1,0 +1,100 @@
+.card{
+    height: 50rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+
+    &__side{
+        height:50rem;
+        width:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        transition: all .8s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 7px;
+        box-shadow: 0 0 3.2rem rgba($dark-color, 0.1);
+
+        &--back{
+            transform: rotateY(180deg);
+            background-color:$primary-color;
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__front-container{
+        padding:0 2.4rem;
+    }
+
+    &__price{
+        font-size:2.4rem;
+        color:#e03131;
+        font-style: italic;
+    }
+
+    &__photo{
+        height:20rem;
+        width:100%;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+    &__details-list{
+        list-style: none;
+        width:70%;
+        margin:0 auto;
+        padding:5.6rem 0;
+    }
+
+    &__details-item{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+
+    &__details-item:not(:last-child){
+        margin-bottom: 2.4rem;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid $primary-color-dark;
+    }
+
+    @include responsive(tablet-portrait){
+        height:auto;
+        box-shadow: 0 0 3.2rem rgba($dark-color, 0.1);
+
+            &__side{
+                position: relative;
+                height: auto;
+                box-shadow: none;
+        
+                &--back{
+                    transform: rotateY(0);
+                    background:none;
+                    padding:2.4rem 0;
+                }
+            }
+        
+            &:hover &__side--front {
+                transform: rotateY(0);
+            }
+        
+        
+            &__details-list{
+                padding:2.4rem 0;
+            }
+        
+            &__details-item{
+                font-size: 1.2rem;
+            }
+        
+    }
+}

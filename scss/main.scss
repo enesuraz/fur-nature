@@ -1,0 +1,29 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/base';
+
+@import "components/buttons";
+@import "components/details";
+@import "components/composition";
+@import "components/benefit";
+@import "components/card";
+@import "components/testimonial";
+@import "components/contact";
+
+@import "layouts/header";
+@import "layouts/float-grid";
+@import "layouts/footer";
+@import "layouts/navigation";
+
+@import "pages/home";
+
+
+////10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+///700,500,400
+/// 8,12,16,24,32,48,56,64,96,112,128
+
+

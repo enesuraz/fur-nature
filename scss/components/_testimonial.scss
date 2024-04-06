@@ -1,0 +1,38 @@
+.testimonial{
+
+    &__shape{
+        width:12rem;
+        height:12rem;
+        float: left;
+        border-radius: 50%;
+        transform: translateX(-1.5rem); 
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+
+       
+    }
+
+    &__shape:hover &__image{
+        transform: scale(1.1);
+    }
+
+    &__image{
+        height:100%;
+       object-fit: cover;
+    }
+
+    &__details{
+        padding:1.6rem 0;
+    }
+
+    &__username{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}

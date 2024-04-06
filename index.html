@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" Welcome to FurNature, where quality meets elegance. Discover our handcrafted furniture pieces designed to transform your living spaces into luxurious retreats. From sleek modern sofas to classic hardwood dining tables, each piece in our collection is meticulously crafted to stand the test of time. Explore our curated selection and bring enduring beauty and comfort to your home today."
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,600,700|Montserrat:400,700&display=swap"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FurNature &mdash; meets elegance</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+
+      <label for="nav-toggle" class="navigation__button"
+        ><span class="navigation__icon"></span
+      ></label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Bests</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Reviews</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header-logo">
+        <img src="assets/logo.png" alt="Logo" class="header-logo__image" />
+      </div>
+      <div class="header-content">
+        <h1 class="heading--primary mb-md">
+          Elevate Your Home with Timeless <span>Quality Furniture </span>
+        </h1>
+        <p class="header-content__description">
+          Welcome to FurNature, where quality meets elegance. Discover our
+          handcrafted furniture pieces designed to transform your living spaces
+          into luxurious retreats.
+        </p>
+        <div class="text-center mt-lg">
+          <a href="#" class="btn btn--secondary"
+            >Learn now <span>&rarr;</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="float-grid">
+          <div class="col-1-of-2">
+            <h2 class="heading--secondary mb-md">
+              Crafting Quality Furniture <span>Since 1990</span>
+            </h2>
+            <p class="paragraph">
+              At FurNature, we take pride in our heritage of crafting exquisite
+              furniture pieces that elevate the ambiance of any space.
+            </p>
+            <div class="details mt-xl">
+              <div class="float-grid">
+                <div class="col-1-of-2">
+                  <div class="text-center">
+                    <span class="details__title">34</span>
+                  </div>
+                  <p class="details__description">Years Experience</p>
+                </div>
+                <div class="col-1-of-2">
+                  <div class="text-center">
+                    <span class="details__title">80%</span>
+                  </div>
+                  <p class="details__description">Recycled Materials</p>
+                </div>
+              </div>
+              <div class="float-grid">
+                <div class="col-1-of-2">
+                  <div class="text-center">
+                    <span class="details__title">96%</span>
+                  </div>
+                  <p class="details__description">Customer Satisfication</p>
+                </div>
+                <div class="col-1-of-2">
+                  <div class="text-center">
+                    <span class="details__title">12</span>
+                  </div>
+                  <p class="details__description">Industry Awards</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="image-composition">
+              <img
+                srcset="
+                  assets/about-small-1.jpg  960w,
+                  assets/about-large-1.jpg 1920w
+                "
+                sizes="(max-width: 56.25em) 23vw, (max-width: 37.5em) 35vw, 350px"
+                alt="Minimalist Chair"
+                class="image-composition__photo image-composition__photo--1"
+                src="assets/about-large-1.jpg"
+              />
+
+              <img
+                srcset="
+                  assets/about-small-2.jpg  960w,
+                  assets/about-large-2.jpg 1920w
+                "
+                sizes="(max-width: 56.25em) 23vw, (max-width: 37.5em) 35vw, 350px"
+                alt="Decorative Chairr"
+                class="image-composition__photo image-composition__photo--2"
+                src="assets/about-large-2.jpg"
+              />
+
+              <img
+                srcset="
+                  assets/about-small-3.jpg  960w,
+                  assets/about-large-3.jpg 1920w
+                "
+                sizes="(max-width: 56.25em) 23vw, (max-width: 37.5em) 35vw, 350px"
+                alt="Home Office Chair"
+                class="image-composition__photo image-composition__photo--3"
+                src="assets/about-large-3.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits-container">
+          <div class="text-center mb-xl title-padding">
+            <h2 class="heading--secondary">
+              Discover the Advantages of FurNature Furniture
+            </h2>
+          </div>
+          <div class="float-grid">
+            <div class="col-1-of-4">
+              <div class="benefit">
+                <div class="text-center mb-md">
+                  <i class="benefit__icon icon-basic-lock"></i>
+                </div>
+                <h3 class="heading--small mb-sm">Durability Guaranteed</h3>
+                <p class="paragraph paragraph--small">
+                  Our furniture is built to last, crafted from premium materials
+                  and rigorously tested for durability. Enjoy peace of mind
+                  knowing that your investment will withstand the test of time.
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="benefit">
+                <div class="text-center mb-md">
+                  <i class="benefit__icon icon-basic-watch"></i>
+                </div>
+                <h3 class="heading--small mb-sm">Timeless Design</h3>
+                <p class="paragraph paragraph--small">
+                  Elevate your space with timeless designs that never go out of
+                  style. From sleek modern pieces to classic favorites, our
+                  furniture adds sophistication and elegance to any room.
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="benefit">
+                <div class="text-center mb-md">
+                  <i class="benefit__icon icon-basic-heart"></i>
+                </div>
+                <h3 class="heading--small mb-sm">Unparalleled Comfort</h3>
+                <p class="paragraph paragraph--small">
+                  Experience unmatched comfort with our thoughtfully designed
+                  furniture. Each piece is ergonomically crafted to provide
+                  superior support and relaxation, ensuring you can unwind in
+                  style.
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="benefit">
+                <div class="text-center mb-md">
+                  <i class="benefit__icon icon-basic-clubs"></i>
+                </div>
+                <h3 class="heading--small mb-sm">Sustainable Practices</h3>
+                <p class="paragraph paragraph--small">
+                  We are committed to sustainability, using eco-friendly
+                  materials and responsible manufacturing practices. Make a
+                  positive impact on the environment without compromising on
+                  quality or style.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="text-center mb-xl">
+          <h2 class="heading--secondary title-padding">
+            Discover Our Best Products
+          </h2>
+        </div>
+        <div class="float-grid">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <img
+                  src="assets/product-1.jpg"
+                  alt="Modern luxury sofa"
+                  class="card__photo"
+                />
+                <div class="card__front-container">
+                  <h3 class="heading--tertiary mt-md">Luxe Leather Sofa</h3>
+                  <div class="text-right mt-sm">
+                    <span class="card__price">$300</span>
+                  </div>
+                  <p class="paragraph paragraph--secondary mt-md">
+                    Indulge in luxury with our Luxe Leather Sofa. Crafted from
+                    premium top-grain leather and featuring plush cushioning,
+                    this sofa offers the perfect blend of style and comfort for
+                    your living space
+                  </p>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <ul class="card__details-list">
+                  <li class="card__details-item">
+                    Premium Top-Grain Leather Upholstery
+                  </li>
+                  <li class="card__details-item">
+                    Plush Cushioning for Ultimate Comfort
+                  </li>
+                  <li class="card__details-item">
+                    Sturdy Hardwood Frame for Durability
+                  </li>
+                  <li class="card__details-item">
+                    Elegant Contemporary Design
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button class="btn btn--primary btn--card">
+                    See more options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <img
+                  src="assets/product-2.jpg"
+                  alt="Modern Dining Table"
+                  class="card__photo"
+                />
+                <div class="card__front-container">
+                  <h3 class="heading--tertiary mt-md">Modern Dining Table</h3>
+                  <div class="text-right mt-sm">
+                    <span class="card__price">$440</span>
+                  </div>
+                  <p class="paragraph paragraph--secondary mt-md">
+                    Elevate your dining experience with our Modern Dining Table.
+                    Its sleek design and sturdy metal base make it a stylish and
+                    functional addition to any modern home.
+                  </p>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <ul class="card__details-list">
+                  <li class="card__details-item">
+                    Tempered Glass Tabletop for Safety and Style
+                  </li>
+                  <li class="card__details-item">
+                    Sleek Metal Base for Stability
+                  </li>
+                  <li class="card__details-item">
+                    Spacious Surface Ideal for Entertaining
+                  </li>
+                  <li class="card__details-item">
+                    Versatile Design Fits Any Decor Style
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button class="btn btn--primary btn--card">
+                    See more options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <img
+                  src="assets/product-3.jpg"
+                  alt="Minimalist Style Chair"
+                  class="card__photo"
+                />
+                <div class="card__front-container">
+                  <h3 class="heading--tertiary mt-md">Minimal Style Chair</h3>
+                  <div class="text-right mt-sm">
+                    <span class="card__price">$140</span>
+                  </div>
+                  <p class="paragraph paragraph--secondary mt-md">
+                    Embrace Scandinavian simplicity with our Scandinavian Style
+                    Chair. With its clean lines, solid wood frame, and
+                    comfortable upholstered seat, this chair adds a touch of
+                    elegance to any room.
+                  </p>
+                </div>
+              </div>
+              <div class="card__side card__side--back">
+                <ul class="card__details-list">
+                  <li class="card__details-item">
+                    Clean and Minimalist Design
+                  </li>
+                  <li class="card__details-item">
+                    Solid Wood Frame for Sturdiness
+                  </li>
+                  <li class="card__details-item">
+                    Sleek and Elegant Curved Armrests
+                  </li>
+                  <li class="card__details-item">
+                    Comfortable Upholstered Seat
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button class="btn btn--primary btn--card">
+                    See more options
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="text-center mb-xl title-padding">
+          <h2 class="heading--secondary">What Our Customers Are Saying</h2>
+        </div>
+        <div class="float-grid">
+          <div class="col-1-of-2">
+            <figure class="testimonial__shape">
+              <img
+                src="assets/user-1.jpg"
+                alt="JohnDoe22"
+                class="testimonial__image"
+              />
+            </figure>
+            <div class="testimonial__details">
+              <h3 class="heading--small mb-sm text-center">
+                Impressive Design
+              </h3>
+              <p class="paragraph paragraph--small mb-md">
+                I was in search of a modern dining table that would complement
+                my minimalist decor, and the Modern Glass Dining Table from
+                FurNature exceeded my expectations. Its sleek design and quality
+                construction make it a standout piece in my dining area.
+              </p>
+              <div class="text-right">
+                <em class="testimonial__username">&mdash; JohnDoe22</em>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <figure class="testimonial__shape">
+              <img
+                src="assets/user-2.jpg"
+                alt="Customer992"
+                class="testimonial__image"
+              />
+            </figure>
+            <div class="testimonial__details">
+              <h3 class="heading--small mb-sm text-center">
+                Excellent Customer Service
+              </h3>
+              <p class="paragraph paragraph--small mb-md">
+                Not only are the products from FurNature top-notch, but the
+                customer service is also exceptional. From helping me choose the
+                perfect furniture pieces to ensuring timely delivery, the team
+                went above and beyond to ensure my satisfaction. I'm a happy
+                customer and will definitely be returning for future purchases.
+              </p>
+              <div class="text-right">
+                <em class="testimonial__username">&mdash; Customer992</em>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-grid">
+          <div class="col-1-of-2">
+            <figure class="testimonial__shape">
+              <img
+                src="assets/user-3.jpg"
+                alt="Sarah123"
+                class="testimonial__image"
+              />
+            </figure>
+            <div class="testimonial__details">
+              <h3 class="heading--small mb-sm text-center">
+                Exceptional Quality
+              </h3>
+              <p class="paragraph paragraph--small mb-md">
+                I recently purchased a Luxe Leather Sofa from FurNature, and I
+                couldn't be happier with my decision. The quality of
+                craftsmanship is exceptional, and the sofa is incredibly
+                comfortable. It has truly transformed my living room into a
+                luxurious retreat.
+              </p>
+              <div class="text-right">
+                <em class="testimonial__username">&mdash; Sarah123</em>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <figure class="testimonial__shape">
+              <img
+                src="assets/user-4.jpg"
+                alt="JaneSmith87"
+                class="testimonial__image"
+              />
+            </figure>
+            <div class="testimonial__details">
+              <h3 class="heading--small mb-sm text-center">
+                Comfort and Style
+              </h3>
+              <p class="paragraph paragraph--small mb-md">
+                The Scandinavian Style Accent Chair from FurNature is both
+                comfortable and stylish. Its minimalist design blends seamlessly
+                with my home decor, and the solid wood frame adds a touch of
+                warmth to the room. I highly recommend it to anyone looking for
+                a chic accent piece.
+              </p>
+              <div class="text-right">
+                <em class="testimonial__username">&mdash; JaneSmith87</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-container">
+          <div class="contact-box">
+            <form action="#" class="form">
+              <h3 class="heading--tertiary mb-lg text-center">Get In Touch</h3>
+              <div class="form__group">
+                <input
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  placeholder="Your name"
+                  required
+                />
+                <label for="name" class="form__label">Full Name</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  id="mail"
+                  class="form__input"
+                  placeholder="Your email"
+                  required
+                />
+                <label for="mail" class="form__label">Email</label>
+              </div>
+              <div class="form__group">
+                <div class="form__radio-group mb-lg">
+                  <input
+                    type="radio"
+                    name="role"
+                    id="customer"
+                    class="form__radio-input"
+                  />
+                  <label for="customer" class="form__radio-label"
+                    ><span class="form__radio-button"></span>Customer</label
+                  >
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="role"
+                    id="designer"
+                    class="form__radio-input"
+                  />
+                  <label for="designer" class="form__radio-label"
+                    ><span class="form__radio-button"></span>Designer</label
+                  >
+                </div>
+              </div>
+              <div class="text-center mt-xl">
+                <button class="btn btn--secondary btn--card">
+                  Contact Us<span>📇</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="float-grid footer__bottom-border">
+        <div class="col-1-of-3">
+          <h3 class="heading--small mb-md">Company</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Blog</a>
+              <a href="#" class="footer__link">Careers</a>
+              <a href="#" class="footer__link">About Uss</a>
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1-of-3">
+          <h3 class="heading--small mb-md">Information</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">FAQs</a>
+              <a href="#" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Terms & Conditions</a>
+              <a href="#" class="footer__link">Shipping & Returns</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1-of-3">
+          <h3 class="heading--small mb-md">Contact</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">info@yourbrand.com</a>
+              <a href="#" class="footer__link">+1 (555) 123-4567</a>
+              <a href="#" class="footer__link">123 Main Street, Anytown, USA</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="float-grid">
+        <div class="col-1-of-2">
+          <picture class="footer__logo-image">
+            <source
+              srcset="assets/logo-small-1x.png 1x, assets/logo-small-2x.png 2x"
+              media="(max-width: 37.5em)"
+            />
+            <img
+              srcset="assets/logo-large-1x.png 1x, assets/logo-large-2x.png 2x"
+              class="footer__logo-image"
+              alt="Footer logo"
+              src="assets/logo-large-2x.png"
+            />
+          </picture>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            &copy; 2024 by FurNature. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

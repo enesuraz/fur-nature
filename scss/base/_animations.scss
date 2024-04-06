@@ -1,0 +1,32 @@
+@keyframes to-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes to-left{
+    0%{
+        opacity: 0;
+        transform: translateX(20%);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+

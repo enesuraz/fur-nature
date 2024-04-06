@@ -1,0 +1,51 @@
+.footer{
+
+    @include responsive(tablet-portrait){
+        text-align: center;
+    }
+    
+
+    &__list{
+        list-style: none;
+    }
+
+    &__link{
+        &,&:link,&:visited{
+            text-decoration: none;
+            display: block;
+            color:inherit;
+            font-size: 1.6rem;
+            color:$light-grey;
+        }
+
+        &:hover,&:active{
+            color:$dark-color;
+        }
+    }
+
+    &__link:not(:last-child){
+        margin-bottom: 1.6rem;
+    }
+
+    &__bottom-border{
+        margin-bottom: 1.6rem !important;
+        padding-bottom:1.6rem;
+        border-bottom: 1px solid $primary-color;
+    }
+
+    &__logo-image{
+        height: 3.2rem;
+    }
+
+    &__copyright{
+        text-align: right;
+        font-size: 1.6rem;
+        margin-top: 4px;
+
+        @include responsive(tablet-portrait){
+            text-align: center;
+            margin-top:-4rem;
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+.heading{
+
+    &--primary{
+    font-weight: 700;
+    line-height: 1.2;
+    font-size:5.2rem;
+    animation: to-right 1s ease-out;
+    letter-spacing: -0.5px;
+
+    @include responsive(phone){
+        font-size: 3.6rem;
+    }
+}
+
+    &--secondary{
+        font-weight: 600;
+        font-size:4.4rem;
+        line-height: 1.1;
+        letter-spacing: 1px;
+
+        @include responsive(tablet-portrait){
+            font-size: 3.6rem;
+        }
+
+        span{
+            color:$primary-color;
+        }
+    }
+
+    &--small{
+        font-weight: 600;
+        font-size:1.6rem;
+        letter-spacing: 1.2px;
+        line-height: 1.02;
+    }
+
+    &--tertiary{
+        font-size:2.4rem;
+    }
+}
+
+.paragraph{
+    font-size: 2rem;
+    line-height: 1.6;
+
+    &--small{
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    &--secondary{
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}

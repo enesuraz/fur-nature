@@ -1,0 +1,39 @@
+.image-composition{
+    position: relative;
+
+    &__photo{
+        width:55%;
+        display: block;
+        position: absolute;
+        top:10rem;
+        border-radius: 3px;
+        z-index: 1;
+        transition: all .2s;
+
+        @include responsive(tablet-portrait){
+            top:0;
+        }
+        
+
+        &--1{
+            left:0;
+        }
+
+        &--2{
+            left:50%;
+        }
+        &--3{
+            left:25%;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            z-index:2;
+            box-shadow: 0 2.5rem 4rem rgba($dark-color, 0.3);
+        }
+    }
+
+    &:hover &__photo:not(:hover){
+        transform: scale(0.95);
+    }
+}

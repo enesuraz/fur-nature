@@ -1,0 +1,46 @@
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    @include responsive(tablet-landscape){
+        width: 75%;
+        padding:0 3.2rem;
+    }
+
+    @include responsive(tablet-portrait){
+        width: 90%;
+        padding:0 3.2rem;
+    }
+
+    span{
+        color:$primary-color-dark;
+    }
+
+    &__description{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        animation: to-left 1s ease-out;
+    }
+
+    .text-center{
+        animation: to-right 1s ease-out;
+    }
+
+}
+
+.header-logo{
+    position:absolute;
+    top:2.4rem;
+    left:3.2rem;
+
+    &__image{
+        height: 6.4rem;
+
+        @include responsive(tablet-portrait){
+            height: 4.8rem;
+        }
+    }
+}
